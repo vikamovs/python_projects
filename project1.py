@@ -1,6 +1,8 @@
 import random
 
 print('Choose one of the templates')
+cat ~/.ssh/vm202905.pub
+
 
 templates = input('enter 1, 2 or 3: ')
 
