@@ -2,7 +2,7 @@ import random
 
 print('Choose one of the templates')
 
-templates = input('enter 1, 2 or 3: ')
+templates = input('enter 1, 2 or 3: ') or random.choice(['1','2','3'])
 
 if templates == '1':
     number = input('Input a number: ')
@@ -63,11 +63,11 @@ elif templates == '2':
     print(f"If I see a {color2} {animal2} while hiking, I am going to bring it home as a pet!")
     print(f"At night we will tell {number2} {word} stories and roast {noun2} around the campfire!!")
 
-else: 
+elif templates == '3': 
     name = input('Input name: ')
     adjective = input('Input adjective: ')
     color = input('Input a color: ')
-    animal = input('Inmput an animal: ')
+    animal = input('Input an animal: ')
     place = input('Input a place: ')
     adjective2 = input('Input adjective again: ')
     magical_creature = input('Input magical plural: ')
@@ -93,3 +93,6 @@ else:
     print(f"I fall asleep each night on a {noun2} of {noun3} and dream of {adjective4} {noun4}.")
     print(f"It feels as though I have lived here for {number} {time}.")
     print(f"I hope one day you can visit, although the only way to get here now is {verb} on a {adjective5} {noun5}!!")
+
+else: 
+    print(f"Invalid input. Please enter 1, 2, or 3")
